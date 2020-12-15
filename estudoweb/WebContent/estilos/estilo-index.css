@@ -1,0 +1,115 @@
+/* || General setup */
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  background-color: #0000a0;
+	 background: url(https://college.canon.com.br/static/img/tip/29d054c0-63be-4bdd-b412-af57912ca751.jpg) 
+	 no-repeat bottom center scroll;
+    background-position: 30% 45%;
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+body {
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* || typography */
+
+h1, h2 {
+  font-family: 'Roboto', sans-serif;
+  color: #2a2a2a;
+}
+
+p, input, li, a {
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #2a2a2a;
+}
+
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+  color: #000000;
+  text-shadow: 2px 2px 8px #c0c0c0;
+}
+
+h2 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+
+
+p, li, a {
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+
+
+/* || header layout */
+
+nav, article, footer {
+  background-color: white;
+  padding: 1%;
+}
+
+nav {
+  height: 50px;
+  background-color: #fac06b;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  padding: 0;
+  list-style-type: none;
+  flex: 2;
+  display: flex;
+}
+
+nav li {
+  display: inline;
+  text-align: center;
+  flex: 1;
+}
+
+nav a {
+  display: inline-block;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+input {
+  font-size: 1.6rem;
+  height: 32px;
+}
+
+
+/* || main layout */
+
+main {
+  display: flex;
+  
+}
+
+article {
+  flex: 4;	
+}
+
+footer {
+  margin-top: 10px;
+
+}

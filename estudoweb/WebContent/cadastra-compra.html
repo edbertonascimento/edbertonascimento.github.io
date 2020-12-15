@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="ISO-8859-1">
+
+    <title>Studio Chaguinha Fotos e Filmagem</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="estilos/estilo-compra.css">
+
+  </head>
+ 
+  <body>
+	<header>
+		<h1>Studio Chaguinha Fotos</h1>
+	</header>
+	
+    <nav>
+      <ul>
+      	<li><a href="index.html">Inicio</a></li>
+        <li><a href="cadastra-compra.html">Cadastrar</a></li>
+        <li><a href="listar1.html">Listar</a></li>
+        <li><a href="sobre-1.html">Sobre</a></li>
+      </ul>
+    </nav>
+
+    <main>
+
+      <article>
+				<h2>Compra de Acessórios</h2>
+			<form>
+				<h3>Cadastro Pessoal</h3>
+				<label for="nomec">Nome Completo:</label><br>
+				<input type="text" name="nomec" onKeyPress= "tecla()"><br>
+	
+				<label for="numerot">Telefone:</label><br>
+				<input type="tel" name="numerot" maxlength ="12" onKeyup = "somenteNumeros(this)"><br>
+	
+				<label for="endereco">Endereço:</label><br>
+				<input type="text" name="endereco" onKeyPress= "tecla()"><br>
+	
+				<h3>Finalização da Compra</h3>
+				<label for="descricao">Descrição:</label><br>
+				<input type="text" name="descricao" onKeyPress= "tecla()"><br>
+		
+	
+				<label for="pagamento">Pago?</label><br>
+				<input type="checkbox" id="pagamento" name="pagamento" value="Pago"><br>
+  
+	
+				<input type="submit" value="Finalizar Compra"><br>
+	
+	
+			</form>
+      </article>
+
+    </main>
+
+    <footer>
+      <p>©Copyright 2050 by Edberto/LSF. All rights reversed.</p>
+    </footer>
+
+	<script src='scripts/main2.js'></script>
+  </body>
+</html>
