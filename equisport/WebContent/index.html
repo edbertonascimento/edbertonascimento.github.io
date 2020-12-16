@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<title>EquiSports</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="estilos/estilo-equisport.css">
+
+<body class="w3-content" style="max-width:1200px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:200px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <img alt="Logo EquiSports" src="imagens/logo-equisport.jpg" style="width: 163px; height: 133px; ">
+  </div>
+  
+  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+    <a href="#" class="w3-bar-item w3-button">Caneleiras</a>
+    <a href="#" class="w3-bar-item w3-button">Tornozeleiras</a>
+    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+      Chuteiras <i class="fa fa-caret-down"></i>
+    </a>
+    <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <a href="#" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Campo</a>
+      <a href="#" class="w3-bar-item w3-button">Society</a>
+      <a href="#" class="w3-bar-item w3-button">Corrida</a>
+      <a href="#" class="w3-bar-item w3-button">Futsal</a>
+    </div>
+    <a href="#" class="w3-bar-item w3-button">Calções</a>
+    <a href="#" class="w3-bar-item w3-button">Meiões</a>
+  </div>
+  <a href="#footer" class="w3-bar-item w3-button w3-padding">Contatos</a> 
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('cadastro').style.display='block'">Cadastro de Compra</a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('listavendas').style.display='block'">Lista de Vendas</a> 
+    
+  <a href="#footer"  class="w3-bar-item w3-button w3-padding">Se Inscreva</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24 w3-wide">EquiSports</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    <p class="w3-left">Chuteiras</p>
+    <p class="w3-right">
+      <i class="fa fa-shopping-cart w3-margin-right"></i>
+      <i class="fa fa-search"></i>
+    </p>
+  </header>
+
+  <!-- Image header -->
+  <div class="w3-display-container w3-container">
+    <img src="imagens/imagem-chuteira3.jpg" alt="Jeans" style="width:100%">
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+      <h1 class="w3-jumbo w3-hide-small">Lançamento</h1>
+      <h1 class="w3-hide-large w3-hide-medium">Lançamento</h1>
+      <h1 class="w3-hide-small">COLEÇÃO 2020</h1>
+      <h1 class="w3-hide-large w3-hide-medium">COLEÇÃO 2020</h1>
+      <p><a href="#jeans" class="w3-button w3-black w3-padding-large w3-large">COMPRE AGORA</a></p>
+    </div>
+  </div>
+
+  <div class="w3-container w3-text-grey" id="chuteiras">
+    <p>8 items</p>
+  </div>
+
+  <!-- Product grid -->
+  <div class="w3-row w3-grayscale">
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="imagens/chuteira1.jpg" style="width:100%">
+        <p>Chuteira Adidas Predator fg preto<br><b>R$149.99</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="imagens/imagem-chuteira2.jpg" style="width:100%">
+        <p>Chuteira Puma 2020<br><b>R$249.99</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="imagens/imagem-chuteira4.jpg" style="width:100%">
+          <span class="w3-tag w3-display-topleft">Nova</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Compre Agora <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Chuteira Adidas X 19 Blue Campo<br><b>R$230.00</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="imagens/chuteira5.jpg" style="width:100%">
+        <p>Chuteira Adidas X 19.3 Infantil<br><b>R$149.99</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="imagens/chuteira8.jpg" style="width:100%">
+        <p>Chuteira Nike Mercurial Vapor 13 Club FG - Preto<br><b>R$150.00</b></p>
+      </div>
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="imagens/chuteira7.jpg" style="width:100%">
+          <span class="w3-tag w3-display-topleft">Venda</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Compre Agora <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Chuteira Puma One<br><b class="w3-text-black">R$149.99</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="imagens/chuteira6.jpg" style="width:100%">
+        <p>Chuteira Nike Mercurial Superfly 6 Elite Campo<br><b>R$199.99</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="imagens/chuteira9.jpg" style="width:100%">
+        <p>Chuteira Nike Tiempo Legend 8 Campo<br><b>R$249.99</b></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Subscribe section -->
+  <div class="w3-container w3-black w3-padding-32">
+    <h1>Se inscreva</h1>
+    <p>Para obter ofertas especiais e tratamento VIP:</p>
+    <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+    <button type="button" class="w3-button w3-red w3-margin-bottom">Se Inscreva</button>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+    <div class="w3-row-padding">
+      <div class="w3-col s4">
+        <h4>Contato</h4>
+        <p>Dúvidas? Pergunte!!!.</p>
+        <form action="/action_page.php" target="_blank">
+          <p><input class="w3-input w3-border" type="text" placeholder="Nome" name="Nome" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="E-mail" name="Email" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Assunto" name="Assunto" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Mensagem" name="Mensagem" required></p>
+          <button type="submit" class="w3-button w3-block w3-black">Enviar</button>
+        </form>
+      </div>
+
+      <div class="w3-col s4">
+        <h4>Sobre</h4>
+        <p><a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('sobre').style.display='block'">Sobre Nós</a></p>
+        <p><a href="#">Estamos Contratando</a></p>
+        <p><a href="#">Suporte</a></p>
+        <p><a href="#">Encontrar Loja</a></p>
+        <p><a href="#">Envio</a></p>
+        <p><a href="#">Formas de Pagamento</a></p>
+        <p><a href="#">Gift card</a></p>
+        <p><a href="#">Retornar</a></p>
+        <p><a href="#">Ajuda</a></p>
+      </div>
+
+      <div class="w3-col s4 w3-justify">
+        <h4>Loja</h4>
+        <p><i class="fa fa-fw fa-map-marker"></i> Pedro II</p>
+        <p><i class="fa fa-fw fa-phone"></i> 3279-2345</p>
+        <p><i class="fa fa-fw fa-phone"></i> (86)98116-1303</p>
+        <p><i class="fa fa-fw fa-phone"></i> (86)98145-5687</p>
+        <p><i class="fa fa-fw fa-envelope"></i> EquiSports.Acessorios@gmail.com</p>
+        <h4>Nós Aceitamos</h4>
+        <p><i class="fa fa-fw fa-cc-amex"></i> Caixa</p>
+        <p><i class="fa fa-fw fa-credit-card"></i> Bradesco</p>
+        <br>
+        <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
+        <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
+        <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
+        <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
+        <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
+      </div>
+    </div>
+  </footer>
+
+  <div class="w3-black w3-center w3-padding-24">©Copyright 2050 by Edberto/Ravenna. All rights reversed.</div>
+
+  <!-- End page content -->
+</div>
+
+<div id="cadastro" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+    <div class="w3-container w3-white w3-center">
+      <i onclick="document.getElementById('cadastro').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+      <h2 class="w3-wide">Cadastro</h2>
+      <p>Junte-se à nossa lista de mala direta para receber atualizações sobre novidades e ofertas especiais.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Digite seu nome Completo" onKeyPress= "tecla()"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Digite se e-mail" onKeyPress= "tecla()"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Endereço" onKeyPress= "tecla()"></p>
+      <p><input class="w3-input w3-border" type="tel" placeholder="Telefone" maxlength ="12" onKeyup = "somenteNumeros(this)"></p>
+      <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('cadastro').style.display='none'">Finalizar</button>
+    </div>
+  </div>
+</div>
+
+<div id="listavendas" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+    <div class="w3-container w3-white w3-center">
+      <i onclick="document.getElementById('listavendas').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+      <h2 class="w3-wide">Lista de Vendas</h2>
+
+			<table style="width:100%">
+  			<tr>
+    			<th>Nome Completo</th>
+    			<th>Email</th>
+    			<th>Endereço</th> 
+    			<th>Telefone</th>  
+    			<th>Descrição</th>
+    			<th>Data da Compra</th>
+  			</tr>
+  			<tr>
+   			 	<td>Fulano De Costa Pereira</td>
+   			 	<td>Fulano@gmail.com</td>
+   			 	<td>Lagoa de São Francisco</td>
+    			<td>(86)98132-1456</td>
+    			<td>Chuteira Campo</td>
+    			<td>21/08/2020</td>
+    			
+  			</tr>
+  			<tr>
+    			<td>Sicrano da Silva Martins</td>
+    			<td>Sicrano@hotmail.com</td>
+    			<td>Pedro II</td>
+    			<td>(86)98112-3465</td>
+   	 			<td>Caneleira</td>
+    			<td>30/07/2020</td>
+    			
+  			</tr>
+    		<tr>
+    			<td>Francisco Da Costa</td>
+    			<td>Francisco@gmail.com</td>
+    			<td>Piripiri</td>
+    			<td>(86)98131-2654</td>
+    			<td>Chuteira Futsal</td>
+    			<td>26/01/2020</td>
+    			
+  			</tr>
+		</table><br>
+    </div>
+  </div>
+</div>
+
+<div id="sobre" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+    <div class="w3-container w3-white w3-center">
+      <i onclick="document.getElementById('sobre').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+      <h2 class="w3-wide">Sobre O EquiSports</h2>
+			<img alt="Logotipo do Studio Chaguinha Fotos: Câmerax com uma pasta e fotos." 
+			src="imagens/logo-equisport.jpg" style="width: 160px; height: 180px; ">
+			<h3>Nossa história desde 2020</h3>
+			<p>O EquiSports foi idealizado com a finalidade de que as pessoas tem de comprar seus equipamentos para 
+			suas práticas esportivas.</p>
+			<p>No EquiSports você pode:</p>
+			<ul>
+				<li>Comprar chuteiras de todos os tipos.</li>
+				<li>Comprar os Acessórios esportivos em geral.</li>
+				<li>Aproveitar os lançamentos do ano.</li>
+				<li>E muito mais...</li>
+			</ul>
+				<p>Este é um projeto desenvolvido como parte da disciplina de Programação Web do 3º
+				 Ano do ensino médio técnico integrado ao médio do IFPI campus pedro II. 
+				 para saber saber mais informações sobre a intituição, 
+				acesse <a href="https://www.ifpi.edu.br" title="Site da página do IFPI">o site do IFPI.</a></p>
+     
+    </div>
+  </div>
+</div>
+
+
+<script src="scripts/main.js"></script>
+
+</body>
+</html>
